@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,400;0,700;1,700&display=swap');
+
+.content {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url('/assets/img/capa_himym.jpg');
+  background-size: cover;
+
+  height: 92vh;
+
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.alert {
+  color: #e50914;
+  
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 80px;
+}
+
+.botao-netflix {
+  background-color: rgba(163, 6, 6, 1);
+  border: none;
+  color: white;
+
+  padding: 15px 20px;
+  margin-right: 15px;
+  font-size: 12px;
+
+  cursor: pointer;
+
+  transition: 0.3s ease all;
+
+  border-radius: 3px;
+
+  font-weight: bold;
+}
+
+.fa-play {
+    color: white;
+}
+
+.botao-netflix:hover {
+    background-color: hsla(0, 93%, 33%, 0.702);
+}
+
+
+
+
+
+
+
+

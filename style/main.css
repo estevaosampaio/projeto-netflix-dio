@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,400;0,700;1,700&display=swap');
+
+
+:root {
+  --vermelho: #e50914;
+  --preto: #141414;
+  --links: #aaa;
+  
+
+  /* light mode */
+  --light: #e9e6e6;
+  --lightLinks: #3a3939;
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  text-decoration: none;
+  
+}
+
+/* Elementos Base */
+body {
+  background: var(--preto);
+  font-family: 'Lato', sans-serif;
+  color: #fafafa;
+
+  transition: 1.0s ease all;
+
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  margin-left: 10px;
+  color: var(--vermelho);
+  font-family: 'Bebas Neue', cursive;
+  font-size: 50px;
+}
+
+header nav a,i {
+  text-decoration: none;
+  color: var(--links);
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+header nav i:hover {
+  color: #fff;
+}
+
+/* Filme Principal */
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/assets/img/capa_himym.jpg');
+
+    background-size: cover;
+    height: 550px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    width: 80%;
+}
+
+.titulo {
+    margin-top: 5%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(163, 6, 6, 0.7);
+    border: none;
+    color: white;
+
+    padding: 15px 20px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease all;
+
+    border-radius: 3px;
+    
+}
+
+.botao:hover{
+    background-color: rgba(163, 6, 6, 1);
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 60%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes {
+  margin-top: 10px;
+}
+
+/* light mdoe */
+.light-mode {
+  background: var(--light);
+}
+
+.light-mode nav a {
+  color: var(--lightLinks)
+}
+
+.light-mode nav i {
+  color: var(--lightLinks)
+}
+
+.light-mode h1 {
+  color: var(--lightLinks);
+}
+
+.light-mode .content{
+  background: url('../assets/img/capa_himym.jpg');
+  background-size: cover;
+}
+
+.light-mode .filme-principal{
+  background: url('/assets/img/capa_himym.jpg');
+  background-size: cover;
+  color: var(--preto);
+}
+
+.light-mode .botao {
+  background-color: rgba(163, 6, 6, 1);
+  color: white;
+}
+
+.light-mode .botao:hover {
+  background-color: rgba(163, 6, 6, 0.7);
+  
+}
+
+.light-mode .botao i{
+  color: white;
+}
